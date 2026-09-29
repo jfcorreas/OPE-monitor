@@ -1,4 +1,5 @@
 import os
+import re
 import requests
 import hashlib
 from bs4 import BeautifulSoup
@@ -25,15 +26,11 @@ def obtener_contenido_web(url):
         
         soup = BeautifulSoup(response.text, "html.parser")
         
-        # OPCIÓN A: Monitorear el cuerpo del sitio
-        # contenido = soup.find("body")
-        
-        # OPCIÓN B: Descomentar si deseas monitorear solo un elemento específico
-        contenido = soup.find("div", id="block-system-main") 
-        
-        if contenido:
-            return contenido.get_text(strip=True)
-        return ""
+        document_list = []
+        for tag in soup.find_all("div", id=re.compile(r"^node-ope-documento")):
+            document_list.append(tag.get_text(strip=True))
+ 
+        return document_list
     except requests.exceptions.RequestException as e:
         print(f"[ERROR] Error al acceder a {url}: {e}")
         return None
