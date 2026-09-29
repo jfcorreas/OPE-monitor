@@ -57,15 +57,15 @@ def calcular_hash(texto):
 #         f.write(nuevo_hash)
 
 
-def guardar_lista_json(lista, ruta):
-    """Guarda una lista en un archivo JSON."""
+def guardar_documentos_ope(lista, categoria, ruta):
+    """Guarda la lista bajo la clave 'documentos' en un objeto JSON."""
     with open(ruta, "w", encoding="utf-8") as f:
-        json.dump(lista, f, ensure_ascii=False, indent=2)
+        json.dump({categoria: lista}, f, ensure_ascii=False, indent=2)
   
 
 if __name__ == "__main__":
     contenido = obtener_contenido_web(url=URL_TEST)
-    guardar_lista_json(contenido, DOCUMENTOS_OPE)
+    guardar_documentos_ope(contenido, "TEL1" , DOCUMENTOS_OPE)
     print(len(set(contenido)))
 
 # s = set(temp2)
