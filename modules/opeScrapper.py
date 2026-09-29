@@ -2,12 +2,14 @@ import os
 import re
 import requests
 import hashlib
+import json
 from bs4 import BeautifulSoup
 
 URL_TEST = "https://sanidad.castillalamancha.es/profesionales/atencion-al-profesional/oferta-de-empleo-publico-2023-2024/gestion?field_categoria_profesional_tid=4515&field_sistema_de_acceso_tid=4770"  # Reemplaza con la URL a monitorear
 
+DOCUMENTS_ID_TAG = "node-ope-documento"  # ID de los div que contienen los documentos relevantes
 # Archivo persistente para no perder el estado al reiniciar el script
-ARCHIVO_HASH = "ultimo_hash.txt"
+DOCUMENTOS_OPE = "data/documentos_ope.json"
 
 # Cabecera para evitar bloqueos por peticiones automáticas
 HEADERS = {
@@ -27,7 +29,7 @@ def obtener_contenido_web(url):
         soup = BeautifulSoup(response.text, "html.parser")
         
         document_list = []
-        for tag in soup.find_all("div", id=re.compile(r"^node-ope-documento")):
+        for tag in soup.find_all("div", id=re.compile(r"^" + DOCUMENTS_ID_TAG)):
             document_list.append(tag.get_text(strip=True))
  
         return document_list
@@ -41,19 +43,30 @@ def calcular_hash(texto):
     return hashlib.md5(texto.encode("utf-8")).hexdigest()
 
 
-def cargar_hash_previo():
-    """Carga el último hash guardado desde el archivo."""
-    if os.path.exists(ARCHIVO_HASH):
-        with open(ARCHIVO_HASH, "r", encoding="utf-8") as f:
-            return f.read().strip()
-    return None
+# def cargar_hash_previo():
+#     """Carga el último hash guardado desde el archivo."""
+#     if os.path.exists(ARCHIVO_HASH):
+#         with open(ARCHIVO_HASH, "r", encoding="utf-8") as f:
+#             return f.read().strip()
+#     return None
 
 
-def guardar_hash(nuevo_hash):
-    """Guarda el nuevo hash en el archivo."""
-    with open(ARCHIVO_HASH, "w", encoding="utf-8") as f:
-        f.write(nuevo_hash)
+# def guardar_hash(nuevo_hash):
+#     """Guarda el nuevo hash en el archivo."""
+#     with open(ARCHIVO_HASH, "w", encoding="utf-8") as f:
+#         f.write(nuevo_hash)
+
+
+def guardar_lista_json(lista, ruta):
+    """Guarda una lista en un archivo JSON."""
+    with open(ruta, "w", encoding="utf-8") as f:
+        json.dump(lista, f, ensure_ascii=False, indent=2)
   
 
 if __name__ == "__main__":
-    print(obtener_contenido_web(url=URL_TEST))
+    contenido = obtener_contenido_web(url=URL_TEST)
+    guardar_lista_json(contenido, DOCUMENTOS_OPE)
+    print(len(set(contenido)))
+
+# s = set(temp2)
+# temp3 = [x for x in temp1 if x not in s]
