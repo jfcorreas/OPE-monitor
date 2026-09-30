@@ -6,7 +6,9 @@ from bs4 import BeautifulSoup
 URL_TEST = "https://sanidad.castillalamancha.es/profesionales/atencion-al-profesional/oferta-de-empleo-publico-2023-2024/gestion?field_categoria_profesional_tid=4515&field_sistema_de_acceso_tid=4770"  # Reemplaza con la URL a monitorear
 
 DOCUMENTS_ID_TAG = "node-ope-documento"  # ID de los div que contienen los documentos relevantes
-DOCUMENTOS_OPE = "data/documentos_ope.json"  # Archivo persistente para no perder el estado al reiniciar el script
+DOCUMENTOS_OPE = "data/documentos_ope.json" 
+OPE_ACTUAL = "ope23-24"
+BBDD_PAGINAS_OPE = "data/paginas_ope.json" 
 
 # Cabecera para evitar bloqueos por peticiones automáticas
 HEADERS = {
@@ -60,11 +62,32 @@ def buscar_actualizaciones_ope(nueva_lista, categoria, ruta):
 
     return actualizaciones
 
+def obtener_urls_ope():
+    """Obtiene las URLs de las páginas de la OPE_ACTUAL desde el archivo JSON."""
+    try:
+        with open(BBDD_PAGINAS_OPE, "r", encoding="utf-8") as f:
+            data = json.load(f)
+            ope_actual = data[OPE_ACTUAL]   
+            url_base_ope = ope_actual["URL_base"]
+            categorias = ope_actual["categorias"]
+            dict_urls = {}
+            for categoria in categorias:
+                dict_urls[categoria["abreviatura"]] = url_base_ope + categoria["url"]
+            return dict_urls
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {}
+
 if __name__ == "__main__":
-    documentos = obtener_documentos_web(url=URL_TEST)
+    """ Prueba de las funciones del módulo opeScrapper.py con la primera categoría de la OPE_ACTUAL """
+    urls = obtener_urls_ope()
+
+    categoria, url_categoria = list(urls.items())[0]  # Obtiene la primera categoría y su URL
+    print(f"Categoría: {categoria}, URL: {url_categoria}")
+
+    documentos = obtener_documentos_web(url=url_categoria)
     print(f"Longitud de la lista de documentos: {len(documentos)}")
 
-    actualizados = buscar_actualizaciones_ope(documentos, categoria="TEST", ruta=DOCUMENTOS_OPE)
+    actualizados = buscar_actualizaciones_ope(documentos, categoria=categoria, ruta=DOCUMENTOS_OPE)
     print(f"Documentos actualizados: {len(actualizados)}\n{chr(10).join(actualizados)}")
 
-    guardar_documentos_ope(documentos, categoria="TEST", ruta=DOCUMENTOS_OPE)
+    guardar_documentos_ope(documentos, categoria=categoria, ruta=DOCUMENTOS_OPE)

@@ -1,0 +1,22 @@
+{
+    "ope23-24": {
+        "URL_base": "https://sanidad.castillalamancha.es/profesionales/atencion-al-profesional/oferta-de-empleo-publico-2023-2024",
+        "nombre": "OPE 2023-2024",
+        "categorias": [
+            {
+                "nombre": "Farmacéutico de Atención Primaria",
+                "abreviatura": "FarmaceuticoAP",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4485&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "FEA Alergología",
+                "abreviatura": "FEA-ALG",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4567&field_sistema_de_acceso_tid=4770"
+            }
+        ]
+    }
+}
