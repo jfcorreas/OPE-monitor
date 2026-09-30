@@ -35,26 +35,6 @@ def obtener_documentos_web(url):
         print(f"[ERROR] Error al acceder a {url}: {e}")
         return None
 
-
-def calcular_hash(texto):
-    """Genera un hash MD5 a partir del contenido de texto."""
-    return hashlib.md5(texto.encode("utf-8")).hexdigest()
-
-
-# def cargar_hash_previo():
-#     """Carga el último hash guardado desde el archivo."""
-#     if os.path.exists(ARCHIVO_HASH):
-#         with open(ARCHIVO_HASH, "r", encoding="utf-8") as f:
-#             return f.read().strip()
-#     return None
-
-
-# def guardar_hash(nuevo_hash):
-#     """Guarda el nuevo hash en el archivo."""
-#     with open(ARCHIVO_HASH, "w", encoding="utf-8") as f:
-#         f.write(nuevo_hash)
-
-
 def guardar_documentos_ope(lista, categoria, ruta):
     """Guarda la lista bajo la clave correspondiente a la categoría en un fichero JSON."""
     with open(ruta, "r", encoding="utf-8") as f:
