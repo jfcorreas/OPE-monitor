@@ -1,4 +1,3 @@
-import os
 import re
 import requests
 import hashlib
@@ -8,8 +7,7 @@ from bs4 import BeautifulSoup
 URL_TEST = "https://sanidad.castillalamancha.es/profesionales/atencion-al-profesional/oferta-de-empleo-publico-2023-2024/gestion?field_categoria_profesional_tid=4515&field_sistema_de_acceso_tid=4770"  # Reemplaza con la URL a monitorear
 
 DOCUMENTS_ID_TAG = "node-ope-documento"  # ID de los div que contienen los documentos relevantes
-# Archivo persistente para no perder el estado al reiniciar el script
-DOCUMENTOS_OPE = "data/documentos_ope.json"
+DOCUMENTOS_OPE = "data/documentos_ope.json"  # Archivo persistente para no perder el estado al reiniciar el script
 
 # Cabecera para evitar bloqueos por peticiones automáticas
 HEADERS = {
@@ -58,14 +56,22 @@ def calcular_hash(texto):
 
 
 def guardar_documentos_ope(lista, categoria, ruta):
-    """Guarda la lista bajo la clave 'documentos' en un objeto JSON."""
+    """Guarda la lista bajo la clave correspondiente a la categoría en un fichero JSON."""
+    with open(ruta, "r", encoding="utf-8") as f:
+        try:
+            data = json.load(f)
+        except json.JSONDecodeError:
+            data = {}
+
+    data[categoria] = lista
+        
     with open(ruta, "w", encoding="utf-8") as f:
-        json.dump({categoria: lista}, f, ensure_ascii=False, indent=2)
+        json.dump(data, f, ensure_ascii=False, indent=2)
   
 
 if __name__ == "__main__":
     contenido = obtener_contenido_web(url=URL_TEST)
-    guardar_documentos_ope(contenido, "TEL1" , DOCUMENTOS_OPE)
+    guardar_documentos_ope(contenido, "TEST" , DOCUMENTOS_OPE)
     print(len(set(contenido)))
 
 # s = set(temp2)
