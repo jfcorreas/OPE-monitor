@@ -35,7 +35,7 @@ def monitorear():
 
     while True:
         print(f"[{time.strftime('%Y-%m-%d %H:%M:%S')}] Comprobando sitio web...")
-        texto_actual = opeScrapper.obtener_contenido_web(URL)
+        texto_actual = opeScrapper.obtener_documentos_web(URL)
         
         if texto_actual:
             hash_actual = opeScrapper.calcular_hash(texto_actual)

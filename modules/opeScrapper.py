@@ -18,7 +18,7 @@ HEADERS = {
     )
 }
 
-def obtener_contenido_web(url):
+def obtener_documentos_web(url):
     """Descarga la página y extrae el texto relevante."""
     try:
         response = requests.get(url, headers=HEADERS, timeout=10)
@@ -67,12 +67,25 @@ def guardar_documentos_ope(lista, categoria, ruta):
         
     with open(ruta, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
-  
+
+def buscar_actualizaciones_ope(nueva_lista, categoria, ruta):
+    """Compara la nueva lista con la guardada y devuelve los elementos nuevos."""
+    try:
+        with open(ruta, "r", encoding="utf-8") as f:
+            data = json.load(f)
+            lista_guardada = set(data.get(categoria, []))
+    except (FileNotFoundError, json.JSONDecodeError):
+        lista_guardada = set()
+
+    actualizaciones = [doc for doc in nueva_lista if doc not in lista_guardada]
+
+    return actualizaciones
 
 if __name__ == "__main__":
-    contenido = obtener_contenido_web(url=URL_TEST)
-    guardar_documentos_ope(contenido, "TEST" , DOCUMENTOS_OPE)
-    print(len(set(contenido)))
+    documentos = obtener_documentos_web(url=URL_TEST)
+    print(f"Longitud de la lista de documentos: {len(documentos)}")
 
-# s = set(temp2)
-# temp3 = [x for x in temp1 if x not in s]
+    actualizados = buscar_actualizaciones_ope(documentos, categoria="TEST", ruta=DOCUMENTOS_OPE)
+    print(f"Documentos actualizados: {len(actualizados)}\n{chr(10).join(actualizados)}")
+
+    guardar_documentos_ope(documentos, categoria="TEST", ruta=DOCUMENTOS_OPE)
