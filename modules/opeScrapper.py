@@ -1,6 +1,5 @@
 import re
 import requests
-import hashlib
 import json
 from bs4 import BeautifulSoup
 
