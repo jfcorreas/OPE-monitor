@@ -22,5 +22,7 @@ def enviar_telegram(mensaje):
 
 if __name__ == "__main__":
     """Prueba de envío de mensaje a Telegram."""
-    mensaje_prueba = "🚨 *¡Alerta de prueba!*\n\nEste es un mensaje de prueba desde el bot."
+    url = "https://www.google.com"
+    mensaje_prueba = f"""🚨 *¡Alerta de prueba!*\n\n
+                    Este es un mensaje de prueba desde el bot\n {url}"""
     enviar_telegram(mensaje_prueba)

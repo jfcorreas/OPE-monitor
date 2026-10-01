@@ -9,6 +9,7 @@ DOCUMENTS_ID_TAG = "node-ope-documento"  # ID de los div que contienen los docum
 DOCUMENTOS_OPE = "data/documentos_ope.json" 
 OPE_ACTUAL = "ope23-24"
 BBDD_PAGINAS_OPE = "data/paginas_ope.json" 
+TEXTO_PARENTESIS_REGEX =  r"\(.*\)"
 
 # Cabecera para evitar bloqueos por peticiones automáticas
 HEADERS = {
@@ -29,7 +30,9 @@ def obtener_documentos_web(url):
         
         document_list = []
         for tag in soup.find_all("div", id=re.compile(r"^" + DOCUMENTS_ID_TAG)):
-            document_list.append(tag.get_text(strip=True))
+            documento = re.sub(TEXTO_PARENTESIS_REGEX, "", tag.get_text(strip=True))
+            documento = documento[:11] + " - " + documento[11:]  
+            document_list.append(documento.strip())
  
         return document_list
     except requests.exceptions.RequestException as e:

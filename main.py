@@ -3,11 +3,12 @@ from modules import opeScrapper
 from modules import telegramBot
 
 # ==================== CONFIGURACIÓN ====================
-INTERVALO_SEGUNDOS = 300   # Chequeo cada 5 minutos
+INTERVALO_CHEQUEOS = 3600   # Chequeo cada hora
+INTERVALO_ENTRE_CATEGORIAS = 10  # Intervalo entre chequeos de categorías (en segundos)
 
 def monitorear():
     """Bucle principal de ejecución."""
-    print(f"Iniciando monitoreo de OPEs SESCAM. Intervalo de chequeo: {INTERVALO_SEGUNDOS} segundos.")
+    print(f"Iniciando monitoreo de OPEs SESCAM. Intervalo de chequeo: {INTERVALO_CHEQUEOS} segundos.")
     num_chequeos = 0
 
     while True:
@@ -23,15 +24,19 @@ def monitorear():
                                                                     ruta=opeScrapper.DOCUMENTOS_OPE)
                 
                 if len(actualizados) > 0:
-                    print("¡Cambio detectado! Enviando alerta...")
-                    mensaje = "🚨 *¡Alerta de cambio detectado!*\n\nCategoría actualizada"
+                    print(f"¡Cambio detectado! Enviando alerta...")
+                    mensaje = f"🚨 *¡Alerta de cambio detectado!*\n\n"
+                    mensaje = mensaje + f"Categoría actualizada: {categoria}\n"
+                    mensaje = mensaje + f"Documentos nuevos:\n· {'\n· '.join(actualizados)}\n\n"
+                    mensaje = mensaje + f"[Visita la página para más detalles]({url})"
                     telegramBot.enviar_telegram(mensaje)
 
                 opeScrapper.guardar_documentos_ope(documentos_actuales,
                                                 categoria=categoria,
                                                 ruta=opeScrapper.DOCUMENTOS_OPE)
-        
-        time.sleep(INTERVALO_SEGUNDOS)
+                time.sleep(INTERVALO_ENTRE_CATEGORIAS)
+        print(f"[{time.strftime('%Y-%m-%d %H:%M:%S')}] Completado. Esperando {int(INTERVALO_CHEQUEOS/60)} minutos para el siguiente chequeo...")
+        time.sleep(INTERVALO_CHEQUEOS)
 
 if __name__ == "__main__":
     monitorear()
