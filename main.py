@@ -24,10 +24,10 @@ def monitorear():
                                                                     ruta=opeScrapper.DOCUMENTOS_OPE)
                 
                 if len(actualizados) > 0:
-                    print(f"¡Cambio detectado! Enviando alerta...")
+                    print(f"[{time.strftime('%Y-%m-%d %H:%M:%S')}] ¡Cambio detectado! en categoría {categoria}. Enviando alerta...")
                     mensaje = f"🚨 *¡Alerta de cambio detectado!*\n\n"
-                    mensaje = mensaje + f"Categoría actualizada: {categoria}\n"
-                    mensaje = mensaje + f"Documentos nuevos:\n· {'\n· '.join(actualizados)}\n\n"
+                    mensaje = mensaje + f"*Categoría actualizada*: {categoria}\n"
+                    mensaje = mensaje + f"*Documentos nuevos*:\n· {'\n· '.join(actualizados)}\n\n"
                     mensaje = mensaje + f"[Visita la página para más detalles]({url})"
                     telegramBot.enviar_telegram(mensaje)
 
