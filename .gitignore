@@ -217,4 +217,4 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 data/documentos_ope.json
-ultimo_hash.txt
+secrets_config.py
