@@ -5,7 +5,7 @@
         "categorias": [
             {
                 "nombre": "Farmacéutico de Atención Primaria",
-                "abreviatura": "FarmaceuticoAP",
+                "abreviatura": "FARMACEUTICO-AP",
                 "tipo_personal": "FACULTATIVO",
                 "sistema_acceso": "LIBRE",
                 "url": "/facultativos?field_categoria_profesional_tid=4485&field_sistema_de_acceso_tid=4770"
@@ -16,6 +16,671 @@
                 "tipo_personal": "FACULTATIVO",
                 "sistema_acceso": "LIBRE",
                 "url": "/facultativos?field_categoria_profesional_tid=4567&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "FEA Análisis Clínicos",
+                "abreviatura": "FEA-LABORATORIO",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4568&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "FEA Anatomía Patológica",
+                "abreviatura": "FEA-APA",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4569&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "FEA Anestesia y Reanimación",
+                "abreviatura": "FEA-ANR",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4570&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "FEA Angiología y Cirugía Vascular",
+                "abreviatura": "FEA-ACV",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4571&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "FEA Aparato Digestivo",
+                "abreviatura": "FEA-DIGESTIVO",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4572&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "FEA Bioquímica Clínica",
+                "abreviatura": "FEA-BIOQUIMICA",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4573&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "FEA Cardiología",
+                "abreviatura": "FEA-CARDIOLOGIA",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4574&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "FEA Cirugía General y Aparato Digestivo",
+                "abreviatura": "FEA-CIRUGIA",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4576&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "FEA Cirugía Oral y Maxilofacial",
+                "abreviatura": "FEA-MAXILOFACIAL",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4577&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "FEA Cirugía Ortopédica y Traumatología",
+                "abreviatura": "FEA-TRAUMA",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4609&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "FEA Cirugía Plástica, Estética y Reparadora",
+                "abreviatura": "FEA-PLASTICA",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4612&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "FEA Cirugía Pediatrica",
+                "abreviatura": "FEA-PEDIATRIA",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4611&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "FEA Cirugía Torácica",
+                "abreviatura": "FEA-TORACICA",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4578&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "FEA Dermatología y Venereología",
+                "abreviatura": "FEA-DERMA",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=9273&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "FEA Endocrinología y Nutrición",
+                "abreviatura": "FEA-ENDOCRINO",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4580&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "FEA Farmacia Hospitalaria",
+                "abreviatura": "FEA-FARMACIA",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4581&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "FEA Geriatría",
+                "abreviatura": "FEA-GERIATRIA",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4583&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "FEA Hematología y Hemoterapia",
+                "abreviatura": "FEA-HEMATOLOGIA",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4584&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "FEA Inmunología",
+                "abreviatura": "FEA-IMMUNOLOGIA",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4585&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "FEA Medicina del Trabajo",
+                "abreviatura": "FEA-MEDTRABAJO",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4586&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "FEA Medicina Física y Rehabilitación",
+                "abreviatura": "FEA-REHABILITACION",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4587&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "FEA Medicina Intensiva",
+                "abreviatura": "FEA-INTENSIVA",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4588&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "FEA Medicina Interna",
+                "abreviatura": "FEA-INTERNA",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4589&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "FEA Medicina Nuclear",
+                "abreviatura": "FEA-NUCLEAR",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4590&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "FEA Medicina Preventiva y Salud Pública",
+                "abreviatura": "FEA-PREVENTIVA",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4591&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "FEA Microbiología y Parasitología",
+                "abreviatura": "FEA-MICROBIOLOGIA",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4592&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "FEA Nefrología",
+                "abreviatura": "FEA-NEFROLOGIA",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4593&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "FEA Neurocirugía",
+                "abreviatura": "FEA-NEUROCIRUGIA",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4595&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "FEA Neurología",
+                "abreviatura": "FEA-NEUROLOGIA",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4597&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "FEA Neurofisiología Clínica",
+                "abreviatura": "FEA-NEUROFISIO",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4596&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "FEA Neumología",
+                "abreviatura": "FEA-NEUMOLOGIA",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4594&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "FEA Obstetricia y Ginecología",
+                "abreviatura": "FEA-GINECOLOGIA",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4598&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "FEA Oftalmología",
+                "abreviatura": "FEA-OFTALMOLOGIA",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4599&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "FEA Oncología Médica",
+                "abreviatura": "FEA-ONCOMED",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4600&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "FEA Oncología Radioterápica",
+                "abreviatura": "FEA-ONCORADIO",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4601&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "FEA Otorrinolaringología",
+                "abreviatura": "FEA-OTORRINO",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4602&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "FEA Pediatría y Áreas Específicas",
+                "abreviatura": "FEA-PEDIATRIA",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4603&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "FEA Psicología Clínica",
+                "abreviatura": "FEA-PSICOLOGIA",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4604&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "FEA Psiquiatría",
+                "abreviatura": "FEA-PSIQUIATRIA",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4605&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "FEA Radiodiagnóstico",
+                "abreviatura": "FEA-RAYOS",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4606&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "FEA Radiofísica Hospitalaria",
+                "abreviatura": "FEA-RADIOFISICA",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4607&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "FEA Reumatología",
+                "abreviatura": "FEA-REUMATOLOGIA",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4608&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "FEA Urología",
+                "abreviatura": "FEA-UROLOGIA",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4610&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Inspector Médico de Servicios Sanitarios",
+                "abreviatura": "FEA-INSPECTOR",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=9275&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Médico de Emergencias",
+                "abreviatura": "FEA-EMERGENCIAS",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4483&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Médico de Admisión y Documentación Clínica",
+                "abreviatura": "FEA-ADMISION",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4484&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Médico de Familia",
+                "abreviatura": "FEA-FAMILIA",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4487&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Médico de Urgencias Hospitalarias",
+                "abreviatura": "FEA-URGENCIAS",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4775&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Odontoestomatólogo",
+                "abreviatura": "FEA-ODONTOESTOMATOLOGO",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4489&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Pediatra de Atención Primaria",
+                "abreviatura": "FEA-PEDIATRIA-AP",
+                "tipo_personal": "FACULTATIVO",
+                "sistema_acceso": "LIBRE",
+                "url": "/facultativos?field_categoria_profesional_tid=4490&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Enfermero/a",
+                "abreviatura": "ENFERMERO",
+                "tipo_personal": "DIPLOMADO",
+                "sistema_acceso": "LIBRE",
+                "url": "/diplomados?field_categoria_profesional_tid=4493&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Enfermero especialista en Enfermería del Trabajo",
+                "abreviatura": "ENFERMERO-TRABAJO",
+                "tipo_personal": "DIPLOMADO",
+                "sistema_acceso": "LIBRE",
+                "url": "/diplomados?field_categoria_profesional_tid=16090&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Enfermero especialista en Enfermería Obstétrico-Ginecológica",
+                "abreviatura": "ENFERMERO-GINE",
+                "tipo_personal": "DIPLOMADO",
+                "sistema_acceso": "LIBRE",
+                "url": "/diplomados?field_categoria_profesional_tid=9276&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Enfermero especialista en Salud Mental",
+                "abreviatura": "ENFERMERO-MENTAL",
+                "tipo_personal": "DIPLOMADO",
+                "sistema_acceso": "LIBRE",
+                "url": "/diplomados?field_categoria_profesional_tid=16091&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Enfermero Inspector de Servicios Sanitarios",
+                "abreviatura": "ENFERMERO-INSPECTOR",
+                "tipo_personal": "DIPLOMADO",
+                "sistema_acceso": "LIBRE",
+                "url": "/diplomados?field_categoria_profesional_tid=11397&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Fisioterapeuta",
+                "abreviatura": "FISIOTERAPEUTA",
+                "tipo_personal": "DIPLOMADO",
+                "sistema_acceso": "LIBRE",
+                "url": "/diplomados?field_categoria_profesional_tid=4496&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Logopeda",
+                "abreviatura": "LOGOPEDA",
+                "tipo_personal": "DIPLOMADO",
+                "sistema_acceso": "LIBRE",
+                "url": "/diplomados?field_categoria_profesional_tid=4498&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Terapéuta Ocupacional",
+                "abreviatura": "TERAPIA-OCUPACIONAL",
+                "tipo_personal": "DIPLOMADO",
+                "sistema_acceso": "LIBRE",
+                "url": "/diplomados?field_categoria_profesional_tid=4499&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Higienista Dental",
+                "abreviatura": "HIGIENISTA-DENTAL",
+                "tipo_personal": "TECNICO",
+                "sistema_acceso": "LIBRE",
+                "url": "/tecnicos?field_categoria_profesional_tid=4501&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Técnico Medio Sanitario en Cuidados Auxiliares de Enfermería",
+                "abreviatura": "TEC-MED-SANITARIO-AUX-ENF",
+                "tipo_personal": "TECNICO",
+                "sistema_acceso": "LIBRE",
+                "url": "/tecnicos?field_categoria_profesional_tid=9277&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Técnico Superior Sanitario de Laboratorio",
+                "abreviatura": "TEC-SUP-SANITARIO-LAB",
+                "tipo_personal": "TECNICO",
+                "sistema_acceso": "LIBRE",
+                "url": "/tecnicos?field_categoria_profesional_tid=4503&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Técnico Superior Sanitario de Medicina Nuclear",
+                "abreviatura": "TEC-SUP-SANITARIO-MED-NUCLEAR",
+                "tipo_personal": "TECNICO",
+                "sistema_acceso": "LIBRE",
+                "url": "/tecnicos?field_categoria_profesional_tid=4504&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Técnico Superior Sanitario de Radiodiagnóstico",
+                "abreviatura": "TEC-SUP-SANITARIO-RADIOLOGIA",
+                "tipo_personal": "TECNICO",
+                "sistema_acceso": "LIBRE",
+                "url": "/tecnicos?field_categoria_profesional_tid=4505&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Técnico Superior Sanitario de Radioterapia",
+                "abreviatura": "TEC-SUP-SANITARIO-RADIOTERAPIA",
+                "tipo_personal": "TECNICO",
+                "sistema_acceso": "LIBRE",
+                "url": "/tecnicos?field_categoria_profesional_tid=4506&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Técnico Superior Sanitario en Anatomía Patológica",
+                "abreviatura": "TEC-SUP-SANITARIO-APAT",
+                "tipo_personal": "TECNICO",
+                "sistema_acceso": "LIBRE",
+                "url": "/tecnicos?field_categoria_profesional_tid=4502&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Albañil",
+                "abreviatura": "ALBAÑIL",
+                "tipo_personal": "GESTION",
+                "sistema_acceso": "LIBRE",
+                "url": "/gestion?field_categoria_profesional_tid=4531&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Bibliotecario",
+                "abreviatura": "BIBLIOTECARIO",
+                "tipo_personal": "GESTION",
+                "sistema_acceso": "LIBRE",
+                "url": "/gestion?field_categoria_profesional_tid=4512&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Calefactor",
+                "abreviatura": "CALEFACTOR",
+                "tipo_personal": "GESTION",
+                "sistema_acceso": "LIBRE",
+                "url": "/gestion?field_categoria_profesional_tid=4526&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Carpintero",
+                "abreviatura": "CARPINTERO",
+                "tipo_personal": "GESTION",
+                "sistema_acceso": "LIBRE",
+                "url": "/gestion?field_categoria_profesional_tid=4533&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Celador",
+                "abreviatura": "CELADOR",
+                "tipo_personal": "GESTION",
+                "sistema_acceso": "LIBRE",
+                "url": "/gestion?field_categoria_profesional_tid=4538&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Cocinero",
+                "abreviatura": "COCINERO",
+                "tipo_personal": "GESTION",
+                "sistema_acceso": "LIBRE",
+                "url": "/gestion?field_categoria_profesional_tid=4517&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Conductor",
+                "abreviatura": "CONDUCTOR",
+                "tipo_personal": "GESTION",
+                "sistema_acceso": "LIBRE",
+                "url": "/gestion?field_categoria_profesional_tid=16093&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Costurero",
+                "abreviatura": "COSTURERO",
+                "tipo_personal": "GESTION",
+                "sistema_acceso": "LIBRE",
+                "url": "/gestion?field_categoria_profesional_tid=4521&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Electricista",
+                "abreviatura": "ELECTRICISTA",
+                "tipo_personal": "GESTION",
+                "sistema_acceso": "LIBRE",
+                "url": "/gestion?field_categoria_profesional_tid=4523&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Fontanero",
+                "abreviatura": "FONTANERO",
+                "tipo_personal": "GESTION",
+                "sistema_acceso": "LIBRE",
+                "url": "/gestion?field_categoria_profesional_tid=4524&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Gobernanta",
+                "abreviatura": "GOBERNANTA",
+                "tipo_personal": "GESTION",
+                "sistema_acceso": "LIBRE",
+                "url": "/gestion?field_categoria_profesional_tid=9278&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Grupo Administrativo de la función administrativa",
+                "abreviatura": "ADMINISTRATIVO",
+                "tipo_personal": "GESTION",
+                "sistema_acceso": "LIBRE",
+                "url": "/gestion?field_categoria_profesional_tid=4518&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Grupo Auxiliar de la función administrativa",
+                "abreviatura": "AUXILIAR-ADMINISTRATIVO",
+                "tipo_personal": "GESTION",
+                "sistema_acceso": "LIBRE",
+                "url": "/gestion?field_categoria_profesional_tid=9279&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Grupo de Gestión de la función administrativa",
+                "abreviatura": "GESTION-ADMINISTRATIVO",
+                "tipo_personal": "GESTION",
+                "sistema_acceso": "LIBRE",
+                "url": "/gestion?field_categoria_profesional_tid=4514&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Grupo Técnico de la función administrativa",
+                "abreviatura": "TECNICO-ADMINISTRATIVO",
+                "tipo_personal": "GESTION",
+                "sistema_acceso": "LIBRE",
+                "url": "/gestion?field_categoria_profesional_tid=4509&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Ingeniero Superior",
+                "abreviatura": "INGENIERO-SUPERIOR",
+                "tipo_personal": "GESTION",
+                "sistema_acceso": "LIBRE",
+                "url": "/gestion?field_categoria_profesional_tid=4511&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Ingeniero Técnico Industrial",
+                "abreviatura": "INGENIERO-TECNICO",
+                "tipo_personal": "GESTION",
+                "sistema_acceso": "LIBRE",
+                "url": "/gestion?field_categoria_profesional_tid=4516&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Lavandero",
+                "abreviatura": "LAVANDERO",
+                "tipo_personal": "GESTION",
+                "sistema_acceso": "LIBRE",
+                "url": "/gestion?field_categoria_profesional_tid=4544&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Mecánico",
+                "abreviatura": "MECANICO",
+                "tipo_personal": "GESTION",
+                "sistema_acceso": "LIBRE",
+                "url": "/gestion?field_categoria_profesional_tid=4528&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Monitor",
+                "abreviatura": "MONITOR",
+                "tipo_personal": "GESTION",
+                "sistema_acceso": "LIBRE",
+                "url": "/gestion?field_categoria_profesional_tid=16094&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Peluquero",
+                "abreviatura": "PELUQUERO",
+                "tipo_personal": "GESTION",
+                "sistema_acceso": "LIBRE",
+                "url": "/gestion?field_categoria_profesional_tid=16095&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Peón",
+                "abreviatura": "PEON",
+                "tipo_personal": "GESTION",
+                "sistema_acceso": "LIBRE",
+                "url": "/gestion?field_categoria_profesional_tid=4546&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Pinche",
+                "abreviatura": "PINCHE",
+                "tipo_personal": "GESTION",
+                "sistema_acceso": "LIBRE",
+                "url": "/gestion?field_categoria_profesional_tid=4540&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Pintor",
+                "abreviatura": "PINTOR",
+                "tipo_personal": "GESTION",
+                "sistema_acceso": "LIBRE",
+                "url": "/gestion?field_categoria_profesional_tid=4536&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Planchador",
+                "abreviatura": "PLANCHADOR",
+                "tipo_personal": "GESTION",
+                "sistema_acceso": "LIBRE",
+                "url": "/gestion?field_categoria_profesional_tid=4542&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Técnico de Gestión de TI",
+                "abreviatura": "TECNICO_GESTION_TI",
+                "tipo_personal": "GESTION",
+                "sistema_acceso": "LIBRE",
+                "url": "/gestion?field_categoria_profesional_tid=4515&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Técnico Especialista de TI",
+                "abreviatura": "TECNICO_ESPECIALISTA_TI",
+                "tipo_personal": "GESTION",
+                "sistema_acceso": "LIBRE",
+                "url": "/gestion?field_categoria_profesional_tid=4519&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Técnico Superior de TI",
+                "abreviatura": "TECNICO_SUPERIOR_TI",
+                "tipo_personal": "GESTION",
+                "sistema_acceso": "LIBRE",
+                "url": "/gestion?field_categoria_profesional_tid=4510&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Telefonista",
+                "abreviatura": "TELEFONISTA",
+                "tipo_personal": "GESTION",
+                "sistema_acceso": "LIBRE",
+                "url": "/gestion?field_categoria_profesional_tid=4522&field_sistema_de_acceso_tid=4770"
+            },
+            {
+                "nombre": "Trabajador Social",
+                "abreviatura": "TRABAJADOR_SOCIAL",
+                "tipo_personal": "GESTION",
+                "sistema_acceso": "LIBRE",
+                "url": "/gestion?field_categoria_profesional_tid=4513&field_sistema_de_acceso_tid=4770"
             }
         ]
     }

@@ -218,3 +218,4 @@ __marimo__/
 .streamlit/secrets.toml
 data/documentos_ope.json
 secrets_config.py
+categorias_html/
